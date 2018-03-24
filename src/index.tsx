@@ -1,9 +1,12 @@
 import * as React from "react";
-import * as ReactDOM from "react-dom";
+import { render } from "react-dom";
 
 import Index from "./pages";
 
-ReactDOM.render(
+const root = document.createElement('div')
+document.body.appendChild(root)
+
+render(
     <Index />,
-    document.getElementById("app")
+    root
 );
